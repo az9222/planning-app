@@ -1,0 +1,111 @@
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #37A1C7;
+}
+
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #1E8397;
+}
+
+li:hover {
+    background-color:#82BAC6;
+    cursor: pointer;
+}
+
+#addTab {
+    /* margin-left: 750px; 
+    margin-bottom: 20px; */
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #5C83A5;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+}
+
+#addTab:hover{
+    background-color: #3B5B76;
+}
+
+#addTab:active{
+    background-color:#21384C;
+}
+
+#deleteTab {
+    /* margin-left: 750px; 
+    margin-bottom: 20px; */
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #5C83A5;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+}
+
+#deleteTab:hover{
+    background-color: #3B5B76;
+}
+
+#deleteTab:active{
+    background-color:#21384C;
+}
+
+#add-delete-tab{
+    display: inline;
+    margin-left: 580px;
+}
+
+#addTask {
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #5C83A5;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+}
+
+#addTask:hover{
+    background-color: #3B5B76;
+}
+
+#addTask:active{
+    background-color:#21384C;
+}
+
+#delete-task{
+        height: 30px;
+        width: 120px;
+        border-radius: 5px;
+        background-color: #5C83A5;
+        cursor: pointer;
+        color: white;
+        font-size: 10px;
+}
+
+#delete-task:hover{
+    background-color: #3B5B76;
+}
+
+#delete-task:active{
+    background-color:#21384C;
+}
+
+#add-delete-buttons{
+    margin-left: 630px;
+    display: inline;
+}

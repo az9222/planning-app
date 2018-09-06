@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Teacher's Planner App</title>
+    <link rel="stylesheet" href="jquery-ui.css"> <!--after i downloaded the themes, i imported the ui style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- imports JQuery JS library -->
+    <script src="jquery-ui.js"></script> <!--after i downloaded the themes, i imported the jquery ui library-->
+    <script src="list.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>The Teacher's Planner App</h1>
+        <p class="introduction">Welcome to the Teacher's Planner App - developed by a former teacher! In a teacher's life, there is such a large amount of things to do! This app will allow teachers to add tasks and add tabs for those tasks to fall under. Once those tasks are completed, those tasks can then be deleted by checking the boxes. Tasks and tabs can also be rearranged by order of priority simply by dragging. This app will help keep you organized and prepared!</p>
+
+        <div id="add-delete-tab">
+        <button id="addTab">Add Tab</button><!--ADD TAB-->
+        <button id="deleteTab">Delete Tab</button>
+        <div id="add-tab-popup" style="display: none" title="Add a new tab">
+                <label for="new-tab-name">Tab name: </label><input id="new-tab-text" type="text" />    
+        </div>
+        </div>
+        
+        <div id="projects">
+            <ul id="main"> <!--TABS-->
+                <li><a href="#plan">To Plan</a></li>
+                <li><a href="#grade">To Grade</a></li>
+                <li><a href="#meetings">Meetings</a></li>
+                <li><a href="#prep">To Prep</a></li>
+                <li><a href="#misc">Misc.</a></li>
+            </ul>
+
+            <ol id="plan"> 
+                <li><input type="checkbox">Multi-step Equations Lesson</li>
+                <li><input type="checkbox">Multi-step Equations Word Problems Lesson</li>
+            </ol>
+
+            <ol id="grade">
+                <li><input type="checkbox">One-step Equations Quiz</li>
+                <li><input type="checkbox">Tuesday's homework: Pg. 92 #1-10</li>
+            </ol>
+
+             <ol id="meetings">
+                <li><input type="checkbox">Staff meeting @ next Monday 8am</li>
+                <li><input type="checkbox">Math department meeting @ next Wednesday 8am</li>
+                <li><input type="checkbox">High School Readiness Club Meeting with students tomorrow at lunch</li>
+                <li><input type="checkbox">Meeting with Bobby's parents @ next Thursday 4pm</li>
+            </ol>
+
+            <ol id="prep">
+                <li><input type="checkbox">Photocopy tomorrow's classwork worksheets</li>
+                <li><input type="checkbox">Next Friday's substitute teacher plans</li>
+                <li><input type="checkbox">Weekly parent e-mails</li>
+                 <li><input type="checkbox">Create & print 8th grade field trip forms</li>
+            </ol>
+            
+            <ol id="misc">
+                <li><input type="checkbox">Call Jim's parents</li>
+                <li><input type="checkbox">Go through and orgnaize IEP forms</li>
+                <li><input type="checkbox">Update class anchor charts</li>
+                <li><input type="checkbox">Schedule progress meeting with principal</li>
+            </ol>
+        
+    <div id="add-delete-buttons">
+        <button id="delete-task">Delete Task</button>
+
+        <button id="addTask">Add Task</button>
+        <div id="add-task-popup" style="display: none", title: "Add a task">
+            <label for='add-task-title'>Add task: </label><input id="add-task-text" type="text" />
+        </div>
+    </div>
+        </div>
+
+    </div>
+</body>
+</html>
